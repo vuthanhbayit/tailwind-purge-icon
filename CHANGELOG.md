@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/vuthanhbayit/tailwind-purge-icon/compare/v0.0.3...v0.0.4)
+
+### 🏡 Chore
+
+- Add prepublish ([37307d8](https://github.com/vuthanhbayit/tailwind-purge-icon/commit/37307d8))
+
+### ❤️ Contributors
+
+- Vu Thanh Bay <vuthanhbayit@gmail.com>
+
 ## v0.0.3
 
 [compare changes](https://github.com/vuthanhbayit/tailwind-purge-icon/compare/v0.0.2...v0.0.3)
