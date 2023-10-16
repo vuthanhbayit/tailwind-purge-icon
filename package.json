@@ -1,0 +1,40 @@
+{
+  "name": "@vt7/tailwind-purge-icon",
+  "version": "0.0.1",
+  "description": "A repo purge icon using iconify for tailwind",
+  "author": "Vu Thanh Bay <vuthanhbayit@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "build": "unbuild",
+    "stub": "pnpm build --stub",
+    "release": "changelogen --release && npm publish && git push --follow-tags"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@iconify/json": "^2.2.129",
+    "@iconify/json-tools": "^1.0.10",
+    "@iconify/tools": "^3.0.5",
+    "@iconify/types": "^2.0.0",
+    "@iconify/utils": "^2.1.11",
+    "@vt7/utils": "^3.2.1",
+    "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "changelogen":  "^0.5.5",
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0"
+  }
+}
