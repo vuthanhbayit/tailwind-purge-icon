@@ -7,7 +7,8 @@
   "scripts": {
     "build": "unbuild",
     "stub": "pnpm build --stub",
-    "release": "changelogen --release && npm publish && git push --follow-tags"
+    "release": "changelogen --release && npm publish && git push --follow-tags",
+    "prepublish": "pnpm build"
   },
   "type": "module",
   "exports": {
