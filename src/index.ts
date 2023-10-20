@@ -12,16 +12,26 @@ interface Options {
 const purgeIconPlugin = ({ collections, prefix }: Options) => {
   return tailwindPlugin(
     function ({ addComponents, matchUtilities }) {
-      const styleIcon = {
+      const styleMaskIcon = {
         mask: 'var(--icon) no-repeat',
         'mask-size': '100% 100%',
         'background-color': 'currentColor',
         display: 'inline-block',
       }
 
+      const imageIcon = {
+        display: 'inline-block',
+        'background-image': 'var(--icon)',
+        'background-repeat': 'no-repeat',
+        'background-size': '100% 100%'
+      }
+
       addComponents({
-        '.icon': styleIcon,
-        'i[class*="i-"]': styleIcon,
+        '.mask-icon': styleMaskIcon,
+        [`i[class*="${prefix}-"]`]: styleMaskIcon,
+        '.image-icon': imageIcon,
+        [`span[class*="${prefix}-"]`]: imageIcon,
+        [`div[class*="${prefix}-"]`]: imageIcon,
       })
 
       matchUtilities(
@@ -41,7 +51,11 @@ const purgeIconPlugin = ({ collections, prefix }: Options) => {
           },
         },
         {
-          values: getValues(collections),
+          values: {
+            'mask-icon': 'mask-icon',
+            'image-icon': 'image-icon',
+            ...getValues(collections)
+          },
         },
       )
     },
