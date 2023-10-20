@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.5
+
+[compare changes](https://github.com/vuthanhbayit/tailwind-purge-icon/compare/v0.0.4...v0.0.5)
+
+### 🚀 Enhancements
+
+- Update mask and image icon ([8e7ba33](https://github.com/vuthanhbayit/tailwind-purge-icon/commit/8e7ba33))
+
+### ❤️ Contributors
+
+- Vu Thanh Bay <vuthanhbayit@gmail.com>
+
 ## v0.0.4
 
 [compare changes](https://github.com/vuthanhbayit/tailwind-purge-icon/compare/v0.0.3...v0.0.4)
