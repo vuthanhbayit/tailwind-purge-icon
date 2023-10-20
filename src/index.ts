@@ -51,11 +51,7 @@ const purgeIconPlugin = ({ collections, prefix }: Options) => {
           },
         },
         {
-          values: {
-            'mask-icon': 'mask-icon',
-            'image-icon': 'image-icon',
-            ...getValues(collections)
-          },
+          values: getValues(collections),
         },
       )
     },
